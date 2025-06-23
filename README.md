@@ -34,7 +34,7 @@ npm install @salesforce/cli --global
 ### Opción 1: Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/salesforce-api-updater.git
+git clone https://github.com/ilopmuo/salesforce-api-updater.git
 cd salesforce-api-updater
 npm install
 ```
@@ -181,7 +181,7 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 
 Si encuentras algún problema o tienes sugerencias:
 
-1. Abre un [Issue](https://github.com/tu-usuario/salesforce-api-updater/issues)
+1. Abre un [Issue](https://github.com/ilopmuo/salesforce-api-updater/issues)
 2. Describe el problema detalladamente
 3. Incluye información de tu sistema operativo y versión de Node.js
 
