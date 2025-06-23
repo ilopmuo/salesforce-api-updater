@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="45" fill="#1B96FF" stroke="#0070D2" stroke-width="2"/>
+  
+  <!-- Cloud symbol (Salesforce) -->
+  <path d="M30 35 Q25 30, 35 30 Q40 25, 45 30 Q50 25, 55 30 Q65 30, 60 35 Q70 35, 65 45 Q65 50, 55 50 L35 50 Q25 50, 30 40 Q25 35, 30 35" 
+        fill="white" opacity="0.9"/>
+  
+  <!-- API arrows -->
+  <g fill="white">
+    <!-- Left arrow pointing right -->
+    <path d="M20 65 L30 60 L30 63 L35 63 L35 67 L30 67 L30 70 Z"/>
+    <!-- Right arrow pointing left -->
+    <path d="M80 65 L70 60 L70 63 L65 63 L65 67 L70 67 L70 70 Z"/>
+  </g>
+  
+  <!-- Refresh/Update symbol -->
+  <g fill="white" stroke="white" stroke-width="1.5">
+    <path d="M45 75 Q40 70, 45 70 Q50 65, 55 70 Q60 70, 55 75" 
+          fill="none" stroke-linecap="round"/>
+    <path d="M53 73 L55 75 L57 73" fill="white"/>
+  </g>
+  
+  <!-- Version number -->
+  <text x="50" y="85" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">API</text>
+</svg> 

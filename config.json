@@ -1,0 +1,32 @@
+{
+  "defaultApiVersion": "59.0",
+  "supportedFileTypes": {
+    "apex": {
+      "classes": "**/*.cls",
+      "triggers": "**/*.trigger"
+    },
+    "lwc": {
+      "javascript": "**/lwc/**/*.js"
+    }
+  },
+  "sfdxCommands": {
+    "deploy": "sfdx force:source:push",
+    "validate": "sfdx force:source:deploy --checkonly",
+    "status": "sfdx force:source:status"
+  },
+  "ui": {
+    "theme": "modern",
+    "showPreview": true,
+    "autoSave": false,
+    "notifications": true
+  },
+  "advanced": {
+    "backupFiles": true,
+    "maxFileSize": "5MB",
+    "excludePatterns": [
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/.git/**"
+    ]
+  }
+} 

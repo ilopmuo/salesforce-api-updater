@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salesforce API Updater</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔄 Salesforce API Updater</h1>
+            <p>Actualiza masivamente las versiones de API de tus clases Apex, triggers y LWC</p>
+        </header>
+
+        <main>
+            <!-- Paso 1: Seleccionar carpeta -->
+            <section class="step-section">
+                <h2>📁 Paso 1: Seleccionar Proyecto</h2>
+                <div class="input-group">
+                    <button id="selectFolder" class="btn btn-primary">Seleccionar Carpeta del Proyecto</button>
+                    <span id="selectedPath" class="selected-path"></span>
+                </div>
+            </section>
+
+            <!-- Paso 2: Versión de API -->
+            <section class="step-section">
+                <h2>🎯 Paso 2: Versión de API Objetivo</h2>
+                <div class="input-group">
+                    <label for="apiVersion">Nueva versión de API:</label>
+                    <input type="text" id="apiVersion" placeholder="59.0" value="59.0">
+                    <button id="scanFiles" class="btn btn-secondary" disabled>Escanear Archivos</button>
+                </div>
+            </section>
+
+            <!-- Paso 3: Preview -->
+            <section class="step-section">
+                <h2>👀 Paso 3: Preview de Cambios</h2>
+                <div id="filesSummary" class="files-summary"></div>
+                <div id="changesPreview" class="changes-preview"></div>
+                <div class="action-buttons">
+                    <button id="applyChanges" class="btn btn-success" disabled>Aplicar Cambios</button>
+                    <button id="deployChanges" class="btn btn-warning" disabled>Deploy a Salesforce</button>
+                </div>
+            </section>
+
+            <!-- Paso 4: Resultados -->
+            <section class="step-section">
+                <h2>✅ Resultados</h2>
+                <div id="results" class="results"></div>
+            </section>
+        </main>
+
+        <!-- Loading overlay -->
+        <div id="loadingOverlay" class="loading-overlay">
+            <div class="spinner"></div>
+            <p>Procesando...</p>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html> 

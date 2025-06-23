@@ -1,0 +1,52 @@
+{
+  "name": "salesforce-api-updater",
+  "version": "1.0.0",
+  "description": "Aplicación para actualizar masivamente las APIs de Salesforce (Apex Classes, Triggers, LWC)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder",
+    "build-win": "electron-builder --win",
+    "build-mac": "electron-builder --mac",
+    "build-linux": "electron-builder --linux"
+  },
+  "keywords": [
+    "salesforce",
+    "api",
+    "electron",
+    "sfdx",
+    "apex",
+    "lwc"
+  ],
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^27.0.0",
+    "electron-builder": "^24.6.4"
+  },
+  "dependencies": {},
+  "build": {
+    "appId": "com.tuempresa.salesforce-api-updater",
+    "productName": "Salesforce API Updater",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/**/*",
+      "!dist/**/*"
+    ],
+    "win": {
+      "target": "dir"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icon.icns"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/icon.png"
+    }
+  }
+} 
